@@ -4,5 +4,9 @@
 
 
 .counter-text {
-   @apply text-2xl font-bold text-white bg-blue-700 rounded-full w-14 h-14
+   @apply text-blue-400 text-3xl font-bold md:text-white md:bg-blue-700 md:rounded-full w-14 h-14
+}
+
+.counter-label {
+   @apply pt-2 text-center text-white
 }

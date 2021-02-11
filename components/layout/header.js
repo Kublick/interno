@@ -21,8 +21,6 @@ const Header = () => {
 	const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 	const [year] = useState(new Date().getFullYear());
 
-	const [text, setText] = useState(false);
-
 	useEffect(() => {
 		setTimeout(() => {
 			setTimeLeft(calculateTimeLeft());
@@ -43,89 +41,45 @@ const Header = () => {
 		);
 	});
 
-	let mostrarTexto = false;
-
-	useEffect(() => {
-		const showButton = () => {
-			let d1 = new Date();
-			let d2 = new Date("Wed Feb 10 2021 19:10:00");
-			if (d1.getTime() >= d2.getTime()) {
-				console.log("es true");
-				setText(true);
-			}
-		};
-
-		showButton();
-	}, []);
-
 	return (
-		<header className="relative py-4 text-white bg-black">
-			<div className="grid grid-cols-3">
-				<div className="flex justify-center">
-					<p>Logo</p>
-				</div>
-				<div className="flex justify-center space-x-12">
-					<div>
+		<header className="py-4 text-white bg-black border-b-4 border-pink-500">
+			<div className="text-2xl font-bold text-center md:hidden">
+				<p>La clase 1 comienza en.. </p>
+			</div>
+			<div className="flex items-center justify-center">
+				<div className="flex items-center space-x-6 font-bold lg:space-x-12 sm:justify-center">
+					<div className="hidden px-4 text-2xl md:flex">
+						<p>La clase 1 comienza en... </p>
+					</div>
+					<div className="flex flex-col items-center">
 						<p className="flex items-center justify-center counter-text">
 							{timeLeft.days}
 						</p>
-						<p className="pt-2 text-center text-white">dias</p>
+						<p className="counter-label">dias</p>
 					</div>
-					<div>
+					<div className="flex flex-col items-center">
 						<p className="flex items-center justify-center counter-text">
 							{timeLeft.hours}
 						</p>
-						<p className="pt-2 text-center text-white">horas</p>
+						<p className="counter-label">horas</p>
 					</div>
-					<div>
+					<div className="flex flex-col items-center">
 						<p className="flex items-center justify-center counter-text">
 							{timeLeft.minutes}
 						</p>
-						<p className="pt-2 text-center text-white">minutos</p>
+						<p className="counter-label">minutos</p>
 					</div>
-					<div className="justify-center">
+					<div className="flex flex-col items-center">
 						<p className="flex items-center justify-center counter-text">
 							{timeLeft.seconds}
 						</p>
-						<p className="pt-2 text-center text-white">segundos</p>
+						<p className="counter-label">segundos</p>
+					</div>
+					<div className="items-center hidden text-2xl md:flex">
+						<p>Evento Online Gratuito</p>
 					</div>
 				</div>
-				<div>
-					<p className="lg:text-2xl lg:font-bold">Evento Online</p>
-				</div>
 			</div>
-
-			{/* <div className="flex flex-row space-x-24">
-				<p className="flex items-center text-2xl font-bold">
-					Nuestra clase comienza en:
-				</p>
-				<div className="justify-center">
-					<p className="flex items-center justify-center counter-text">
-						{timeLeft.days}
-					</p>
-					<p className="pt-2 text-center text-white">dias</p>
-				</div>
-				<div>
-					<p className="flex items-center justify-center counter-text">
-						{timeLeft.hours}
-					</p>
-					<p className="pt-2 text-center text-white">horas</p>
-				</div>
-				<div>
-					<p className="flex items-center justify-center counter-text">
-						{timeLeft.minutes}
-					</p>
-					<p className="pt-2 text-center text-white">minutos</p>
-				</div>
-				<div className="justify-center">
-					<p className="flex items-center justify-center counter-text">
-						{timeLeft.seconds}
-					</p>
-					<p className="pt-2 text-center text-white">segundos</p>
-				</div>
-			</div>
-			<p className="text-2xl font-bold">Evento Online</p> */}
-			{text ? <h1 className="text-2xl text-red-700">Texto</h1> : null}
 		</header>
 	);
 };
