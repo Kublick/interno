@@ -42,41 +42,48 @@ const Header = () => {
 	});
 
 	return (
-		<header className="py-4 text-white bg-black border-b-4 border-pink-500">
-			<div className="text-2xl font-bold text-center md:hidden">
-				<p>La clase 1 comienza en.. </p>
-			</div>
-			<div className="flex items-center justify-center">
-				<div className="flex items-center space-x-6 font-bold lg:space-x-12 sm:justify-center">
-					<div className="hidden px-4 text-2xl md:flex">
-						<p>La clase 1 comienza en... </p>
-					</div>
-					<div className="flex flex-col items-center">
-						<p className="flex items-center justify-center counter-text">
-							{timeLeft.days}
+		<header>
+			<div className="py-4 bg-black border-b-4 border-purple-500">
+				<div className="flex flex-col items-center justify-around md:flex-row">
+					<div className="text-white">Logo</div>
+					<div>
+						<p className="py-4 text-2xl font-bold text-white">
+							La proxima Clase sera en...
 						</p>
-						<p className="counter-label">dias</p>
 					</div>
-					<div className="flex flex-col items-center">
-						<p className="flex items-center justify-center counter-text">
-							{timeLeft.hours}
+					<div className="flex flex-row w-1/3 justify-evenly">
+						<div className="flex flex-col items-center">
+							<p className="flex items-center justify-center justify-centerflex counter-text">
+								{timeLeft.days}
+							</p>
+							<p className="text-white">dias</p>
+						</div>
+
+						<div className="flex flex-col items-center">
+							<p className="flex items-center justify-center counter-text">
+								{timeLeft.hours}
+							</p>
+							<p className="text-white">horas</p>
+						</div>
+
+						<div className="flex flex-col items-center">
+							<p className="flex items-center justify-center counter-text">
+								{timeLeft.minutes}
+							</p>
+							<p className="text-white">minutos</p>
+						</div>
+
+						<div className="flex flex-col items-center">
+							<p className="flex items-center justify-center counter-text">
+								{timeLeft.seconds}
+							</p>
+							<p className="text-white">segundos</p>
+						</div>
+					</div>
+					<div>
+						<p className="hidden text-2xl font-bold text-white md:block">
+							Clase Totalmente Gratis
 						</p>
-						<p className="counter-label">horas</p>
-					</div>
-					<div className="flex flex-col items-center">
-						<p className="flex items-center justify-center counter-text">
-							{timeLeft.minutes}
-						</p>
-						<p className="counter-label">minutos</p>
-					</div>
-					<div className="flex flex-col items-center">
-						<p className="flex items-center justify-center counter-text">
-							{timeLeft.seconds}
-						</p>
-						<p className="counter-label">segundos</p>
-					</div>
-					<div className="items-center hidden text-2xl md:flex">
-						<p>Evento Online Gratuito</p>
 					</div>
 				</div>
 			</div>
