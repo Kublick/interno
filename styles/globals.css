@@ -10,3 +10,5 @@
 .counter-label {
    @apply pt-2 text-center text-white
 }
+
+.animate {@apply transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110}

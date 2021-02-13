@@ -45,7 +45,6 @@ const Header = () => {
 		<header>
 			<div className="py-4 bg-black border-b-4 border-purple-500">
 				<div className="flex flex-col items-center justify-around md:flex-row">
-					<div className="text-white">Logo</div>
 					<div>
 						<p className="py-4 text-2xl font-bold text-white">
 							La proxima Clase sera en...
@@ -56,28 +55,28 @@ const Header = () => {
 							<p className="flex items-center justify-center justify-centerflex counter-text">
 								{timeLeft.days}
 							</p>
-							<p className="text-white">dias</p>
+							<p className="py-2 text-white">dias</p>
 						</div>
 
 						<div className="flex flex-col items-center">
 							<p className="flex items-center justify-center counter-text">
 								{timeLeft.hours}
 							</p>
-							<p className="text-white">horas</p>
+							<p className="py-2 text-white">horas</p>
 						</div>
 
 						<div className="flex flex-col items-center">
 							<p className="flex items-center justify-center counter-text">
 								{timeLeft.minutes}
 							</p>
-							<p className="text-white">minutos</p>
+							<p className="py-2 text-white">minutos</p>
 						</div>
 
 						<div className="flex flex-col items-center">
 							<p className="flex items-center justify-center counter-text">
 								{timeLeft.seconds}
 							</p>
-							<p className="text-white">segundos</p>
+							<p className="py-2 text-white">segundos</p>
 						</div>
 					</div>
 					<div>
