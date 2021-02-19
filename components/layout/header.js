@@ -1,8 +1,20 @@
 import React, { useEffect, useState } from "react";
 
+let eventDate = "";
+
+let Date1 = "March 9, 2021 00:30";
+let Date2 = "March 11,2021 00:30";
+let Date3 = "March 13,2021 00:30";
+let Date4 = "March 16,2021 00:30";
+
+if (new Date() <= new Date(Date1)) {
+	eventDate = Date1;
+	console.log("entro aqui");
+}
+
 const Header = () => {
 	const calculateTimeLeft = () => {
-		let year = new Date("February 22, 2021 18:00");
+		let year = new Date(eventDate);
 		const difference = +new Date(`${year}-10-1`) - +new Date();
 		let timeLeft = {};
 

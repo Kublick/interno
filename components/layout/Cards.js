@@ -11,7 +11,7 @@ const Cards = () => {
 					</h1>
 					<div className="relative flex items-center justify-center p-10 px-10">
 						<Image
-							src={"/images/cap1.png"}
+							src={"/images/sesion1.png"}
 							width={216}
 							height={135}
 							className="rounded-lg"
@@ -34,7 +34,7 @@ const Cards = () => {
 			<div className="flex flex-wrap items-center justify-center opacity-60">
 				<div className="relative flex-shrink-0 m-6 overflow-hidden bg-pink-300 rounded-lg shadow-lg max-w-l">
 					<div className="relative flex items-center justify-center p-10 px-10">
-						<Image src={"/images/epi2.png"} width={216} height={135} />
+						<Image src={"/images/sesion2.png"} width={216} height={135} />
 					</div>
 
 					<div className="relative px-6 pb-6 mt-6 text-white">
@@ -53,7 +53,7 @@ const Cards = () => {
 			<div className="flex flex-wrap items-center justify-center opacity-60">
 				<div className="relative flex-shrink-0 m-6 overflow-hidden bg-pink-300 rounded-lg shadow-lg max-w-l">
 					<div className="relative flex items-center justify-center p-10 px-10">
-						<Image src={"/images/epi3.png"} width={216} height={135} />
+						<Image src={"/images/sesion3.png"} width={216} height={135} />
 					</div>
 
 					<div className="relative px-6 pb-6 mt-6 text-white">
@@ -72,7 +72,7 @@ const Cards = () => {
 			<div className="flex flex-wrap items-center justify-center opacity-60">
 				<div className="relative flex-shrink-0 m-6 overflow-hidden bg-pink-300 rounded-lg shadow-lg max-w-l">
 					<div className="relative flex items-center justify-center p-10 px-10">
-						<Image src={"/images/epi4.png"} width={216} height={135} />
+						<Image src={"/images/sesion4.png"} width={216} height={135} />
 					</div>
 
 					<div className="relative px-6 pb-6 mt-6 text-white">

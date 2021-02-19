@@ -10,7 +10,7 @@ const VideoLoader = () => {
 			<h1 className="mb-8 text-xl text-center text-purple-800">
 				Tu gran oportunidad de tener pacientes en todo el mundo
 			</h1>
-			<ReactPlayer url="https://www.youtube.com/watch?v=MlJ1Z97hBW4" />
+			<ReactPlayer url="https://youtu.be/2uLODu3-Cpg" />
 		</>
 	);
 };
