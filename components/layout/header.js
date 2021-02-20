@@ -9,7 +9,6 @@ let Date4 = "March 16,2021 00:30";
 
 if (new Date() <= new Date(Date1)) {
 	eventDate = Date1;
-	console.log("entro aqui");
 }
 
 const Header = () => {
@@ -48,7 +47,7 @@ const Header = () => {
 
 		timerComponents.push(
 			<span>
-				{timeLeft[interval]} {interval}{" "}
+				{timeLeft[interval]} {interval}
 			</span>
 		);
 	});

@@ -5,15 +5,15 @@ const Cards = () => {
 	return (
 		<>
 			<div className="flex items-center justify-center">
-				<div className="relative flex-shrink-0 m-6 overflow-hidden bg-purple-500 rounded-lg shadow-lg max-w-l animate">
+				<div className="flex-shrink-0 m-6 overflow-hidden bg-purple-500 rounded-lg shadow-lg max-w-l animate">
 					<h1 className="flex justify-center pt-4 text-2xl font-bold text-white animate-pulse">
 						Ahora Disponible !!
 					</h1>
 					<div className="relative flex items-center justify-center p-10 px-10">
 						<Image
 							src={"/images/sesion1.png"}
-							width={216}
-							height={135}
+							width={256}
+							height={144}
 							className="rounded-lg"
 						/>
 					</div>
@@ -34,7 +34,7 @@ const Cards = () => {
 			<div className="flex flex-wrap items-center justify-center opacity-60">
 				<div className="relative flex-shrink-0 m-6 overflow-hidden bg-pink-300 rounded-lg shadow-lg max-w-l">
 					<div className="relative flex items-center justify-center p-10 px-10">
-						<Image src={"/images/sesion2.png"} width={216} height={135} />
+						<Image src={"/images/sesion2.png"} width={256} height={144} />
 					</div>
 
 					<div className="relative px-6 pb-6 mt-6 text-white">
@@ -53,7 +53,7 @@ const Cards = () => {
 			<div className="flex flex-wrap items-center justify-center opacity-60">
 				<div className="relative flex-shrink-0 m-6 overflow-hidden bg-pink-300 rounded-lg shadow-lg max-w-l">
 					<div className="relative flex items-center justify-center p-10 px-10">
-						<Image src={"/images/sesion3.png"} width={216} height={135} />
+						<Image src={"/images/sesion3.png"} width={256} height={144} />
 					</div>
 
 					<div className="relative px-6 pb-6 mt-6 text-white">
@@ -72,7 +72,7 @@ const Cards = () => {
 			<div className="flex flex-wrap items-center justify-center opacity-60">
 				<div className="relative flex-shrink-0 m-6 overflow-hidden bg-pink-300 rounded-lg shadow-lg max-w-l">
 					<div className="relative flex items-center justify-center p-10 px-10">
-						<Image src={"/images/sesion4.png"} width={216} height={135} />
+						<Image src={"/images/sesion4.png"} width={256} height={144} />
 					</div>
 
 					<div className="relative px-6 pb-6 mt-6 text-white">
