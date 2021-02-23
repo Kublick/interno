@@ -58,10 +58,10 @@ const Header = () => {
 				<div className="flex flex-col items-center justify-around md:flex-row">
 					<div>
 						<p className="py-4 text-2xl font-bold text-white">
-							La proxima Clase sera en...
+							La proxima sesión sera en...
 						</p>
 					</div>
-					<div className="flex flex-row w-1/3 justify-evenly">
+					<div className="flex flex-row justify-around w-1/3 lg:justify-between">
 						<div className="flex flex-col items-center">
 							<p className="flex items-center justify-center justify-centerflex counter-text">
 								{timeLeft.days}
@@ -84,7 +84,7 @@ const Header = () => {
 						</div>
 
 						<div className="flex flex-col items-center">
-							<p className="flex items-center justify-center counter-text">
+							<p className="flex items-center justify-center mx-2 counter-text">
 								{timeLeft.seconds}
 							</p>
 							<p className="py-2 text-white">segundos</p>
@@ -92,7 +92,7 @@ const Header = () => {
 					</div>
 					<div>
 						<p className="hidden text-2xl font-bold text-white md:block">
-							Clase Totalmente Gratis
+							Sesión Totalmente Gratis
 						</p>
 					</div>
 				</div>

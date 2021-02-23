@@ -16,7 +16,7 @@ const CommentsFacebook = (props) => {
 			<div
 				className="fb-comments"
 				data-href="https://www.begoba.com/interno"
-				data-numposts="10"
+				data-numposts="15"
 				data-width="100%"
 			></div>
 		</div>

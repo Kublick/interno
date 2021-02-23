@@ -7,7 +7,7 @@ const VideoLoader = () => {
 	const communityButton = () => {
 		setTimeout(() => {
 			setButton(true);
-		}, 10000);
+		}, 1200000);
 	};
 
 	return (
@@ -15,11 +15,11 @@ const VideoLoader = () => {
 			<h1 className="text-4xl font-bold text-center text-purple-800">
 				Sesión #1
 			</h1>
-			<h1 className="mt-3 mb-10 text-xl font-bold text-center text-purple-800">
+			<h1 className="mt-2 mb-4 text-xl font-bold text-center text-purple-800">
 				Tu gran oportunidad de tener pacientes en todo el mundo
 			</h1>
 			<ReactPlayer
-				url="https://www.youtube.com/watch?v=qHZ_TeRqBIY"
+				url="http://youtu.be/2uLODu3-Cpg"
 				onStart={() => communityButton()}
 			/>
 
@@ -34,5 +34,4 @@ const VideoLoader = () => {
 	);
 };
 
-//http://youtu.be/2uLODu3-Cpg
 export default VideoLoader;

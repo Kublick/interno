@@ -2,13 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .counter-text {
-   @apply text-blue-400 text-3xl font-bold md:text-white md:bg-blue-700 md:rounded-full w-14 h-14
+	@apply text-3xl font-bold text-blue-400 md:text-white md:bg-blue-700 md:rounded-full w-14 h-14;
 }
 
 .counter-label {
-   @apply pt-2 text-center text-white
+	@apply pt-2 text-center text-white;
 }
 
-.animate {@apply transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110}
+.animate {
+	@apply transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110;
+}
+
+.social-images {
+	height: 64px;
+	width: 64px;
+	margin: 0 2rem;
+}
